@@ -1,0 +1,23 @@
+{
+  "name": "alura-node-rest-api",
+  "version": "1.0.0",
+  "description": "API que seguirá o padrão rest e utilizando Node Js, Express e MySQL para salvar dados.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaisascastro/alura-node-rest-api.git"
+  },
+  "author": "thaisa castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaisascastro/alura-node-rest-api/issues"
+  },
+  "homepage": "https://github.com/thaisascastro/alura-node-rest-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
