@@ -1,5 +1,6 @@
 const customExpress = require('./config/customExpress');
 const conexao = require('./infraestrutura/conexao')
+const Tabelas = require('./infraestrutura/tabelas')
 
 conexao.connect(erro => {
   if(erro){
@@ -7,6 +8,10 @@ conexao.connect(erro => {
   }
   else {
     console.log("Conectado com sucesso!")
+
+
+    // chamar as tabelas que foram criadas
+    Tabelas.init(conexao)
 
     const app = customExpress();
 
