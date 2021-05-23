@@ -3,7 +3,9 @@ const Atendimento = require('../models/atendimentos')
 module.exports = app => {
 
   //trazer dados
-  app.get('/atendimentos', (req, res) => res.send("Você está na rota atendimento e realizando um GET!"));
+  app.get('/atendimentos', (req, res) => {
+    
+  });
 
   // enviar dados
   app.post('/atendimentos', (req, res) => {
