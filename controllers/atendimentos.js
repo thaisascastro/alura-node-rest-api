@@ -1,17 +1,13 @@
-const Atendimento = require('../models/atendimentos')
+const Atendimento = require("../models/atendimentos");
 
-module.exports = app => {
-
+module.exports = (app) => {
   //trazer dados
-  app.get('/atendimentos', (req, res) => {
-    
-  });
+  app.get("/atendimentos", (req) => {});
 
   // enviar dados
-  app.post('/atendimentos', (req, res) => {
-    const atendimento = req.body
+  app.post("/atendimentos", (req, res) => {
+    const atendimento = req.body;
 
-    Atendimento.adiciona(atendimento, res)
-
-  })
-}
+    Atendimento.adiciona(atendimento, res);
+  });
+};
